@@ -1,0 +1,8 @@
+{
+  "name": "himaru-ya.lollipop.onl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lollipop-onl/himaru-ya.lollipop.onl.git",
+  "author": "tamuraryoya <tamuraryoya@team-lab.com>",
+  "license": "MIT"
+}
