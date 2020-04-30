@@ -1,6 +1,8 @@
 import path from 'path';
 import { GatsbyNode } from 'gatsby';
 import { ContentfulNewsPostConnection } from '../src/types/graphql';
+import * as C from '../src/constants';
+import { url } from '../src/utils';
 
 /** Contentfulから取得されるおしらせ記事のデータ型 */
 type Result = {
@@ -38,7 +40,7 @@ const createNewsPosts: NonNullable<GatsbyNode['createPages']> = async ({
     const { id } = edge.node;
 
     createPage({
-      path: `/news/${id}`,
+      path: url(C.PAGES.NEWS_POST, { id }),
       component: newsPostTemplateFilePath,
       context: { id },
     });
