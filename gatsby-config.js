@@ -11,9 +11,9 @@ module.exports = {
       '千葉市稲毛区の居酒屋 灯まる屋。毎日新鮮な食材でおもてなしいたします。',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-graphql-codegen',
       options: {
