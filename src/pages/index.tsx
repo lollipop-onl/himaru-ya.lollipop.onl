@@ -1,7 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { useSitePreference } from '~/hooks';
 
-const IndexPage: React.FC = () => {
+type Props = {};
+
+const IndexPage: React.FC<Props> = () => {
+  const { sliderPictures } = useSitePreference();
+
   return <div>Hello you.</div>;
 };
 
