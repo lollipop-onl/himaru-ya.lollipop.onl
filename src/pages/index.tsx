@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '~/components/Layout';
 import { useSitePreference } from '~/hooks';
 
 type Props = {};
@@ -6,7 +7,11 @@ type Props = {};
 const IndexPage: React.FC<Props> = () => {
   const { sliderPictures } = useSitePreference();
 
-  return <div>Hello you.</div>;
+  return (
+    <Layout>
+      <div>Hello you.</div>
+    </Layout>
+  );
 };
 
 export default IndexPage;
