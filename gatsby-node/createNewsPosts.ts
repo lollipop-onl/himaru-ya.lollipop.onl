@@ -13,7 +13,7 @@ const createNewsPosts: NonNullable<GatsbyNode['createPages']> = async ({
 }) => {
   const { createPage } = actions;
   const { data, errors } = await graphql<Result>(`
-    query ContentfulNewsPost {
+    query {
       allContentfulNewsPost {
         edges {
           node {
