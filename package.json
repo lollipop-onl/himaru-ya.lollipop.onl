@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/lollipop-onl/himaru-ya.lollipop.onl.git",
-  "author": "tamuraryoya <tamuraryoya@team-lab.com>",
+  "author": "lollipop.onl <lollipop@simochee.net>",
   "license": "MIT",
   "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "develop": "gatsby develop",
+    "start": "yarn develop",
+    "clean": "gatsby clean",
     "lint:js": "eslint --ext js,jsx,ts,tsx .",
     "lint:css": "stylelint \"src/**/*.scss\""
   },
